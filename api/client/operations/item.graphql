@@ -1,0 +1,7 @@
+query getItem {
+    item {
+        id
+        content
+        timestamp
+    }
+}

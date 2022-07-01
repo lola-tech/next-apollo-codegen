@@ -1,0 +1,17 @@
+type Item {
+    id: ID!
+    content: String!
+    timestamp: String!
+}
+
+input ItemInput {
+    content: String!
+}
+
+type Query {
+    item: Item!
+}
+
+type Mutation {
+    updateItem(item: ItemInput!): Item!
+}
